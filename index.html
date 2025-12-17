@@ -1,15 +1,230 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" class="scroll-smooth">
 <head>
-    <title>Ameer Khan A R Y | Aeronautical & Data Engineer</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ameer Khan A.R.Y | Aerospace & AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                    colors: {
+                        dark: '#050505',
+                        card: '#0F0F0F',
+                        accent: '#FF4D4D' // Highlight color
+                    },
+                    animation: {
+                        'marquee': 'marquee 25s linear infinite',
+                    },
+                    keyframes: {
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-100%)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
     <style>
-        body { background-color: black; color: white; font-family: sans-serif; text-align: center; padding-top: 50px; }
-        h1 { color: #00BFFF; } /* Electric Blue */
+        body { background-color: #050505; color: white; }
+        
+        /* The "Noise" Texture Background */
+        .noise-bg {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            pointer-events: none;
+            z-index: 50;
+            opacity: 0.05;
+            background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+        }
+
+        /* Gradient Text */
+        .text-gradient {
+            background: linear-gradient(to right, #ffffff, #9ca3af);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar { width: 8px; }
+        ::-webkit-scrollbar-track { background: #050505; }
+        ::-webkit-scrollbar-thumb { background: #333; border-radius: 4px; }
+        ::-webkit-scrollbar-thumb:hover { background: #555; }
     </style>
 </head>
-<body>
-    <h1>Ameer Khan A R Y</h1>
-    <p>System Initializing...</p>
-    <p>Connecting to Neural Network...</p>
+<body class="antialiased selection:bg-white selection:text-black">
+    <div class="noise-bg"></div>
+
+    <main class="relative z-10 max-w-7xl mx-auto px-6 pt-10">
+        
+        <header class="flex justify-between items-center mb-24">
+            <div class="text-sm font-bold tracking-widest text-gray-500">AMEER KHAN A.R.Y</div>
+            <a href="mailto:ameerkhanary@gmail.com" class="px-5 py-2 rounded-full border border-gray-800 text-sm hover:bg-white hover:text-black transition-all">Get in touch</a>
+        </header>
+
+        <section class="mb-32">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <div class="w-16 h-16 bg-gradient-to-br from-purple-500 to-orange-400 rounded-2xl mb-8"></div> <h1 class="text-5xl md:text-7xl font-bold leading-tight mb-8">
+                        I AM A <br>
+                        <span class="bg-white text-black px-2">COMPUTER VISION</span><br>
+                        ENGINEER.
+                    </h1>
+                </div>
+                <div class="relative group">
+                    <div class="absolute -inset-1 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000"></div>
+                    <div class="relative bg-card p-8 rounded-2xl border border-gray-800">
+                        <p class="text-gray-400 leading-relaxed mb-6">
+                            Renowned for my <strong>innovative approach to aerospace engineering</strong>, I began my career with a <strong>deep passion</strong> for AI. My research success propelled me to lead projects at <strong>IIT Madras</strong>, integrating AI-edge computing into aerospace systems.
+                        </p>
+                        <div class="flex gap-4 text-2xl">
+                            <a href="#" class="hover:text-white text-gray-600"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="hover:text-white text-gray-600"><i class="fab fa-github"></i></a>
+                            <a href="#" class="hover:text-white text-gray-600"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="overflow-hidden mb-32 border-y border-gray-900 py-8 relative">
+            <div class="flex animate-marquee whitespace-nowrap gap-16 text-gray-600 font-bold text-xl uppercase tracking-widest">
+                <span>IIT Madras</span>
+                <span>Airport Authority of India</span>
+                <span>IEEE Xplore</span>
+                <span>YOLOv8</span>
+                <span>NVIDIA Jetson</span>
+                <span>Crescent Institute</span>
+                <span>IIT Madras</span> <span>Airport Authority of India</span>
+                <span>IEEE Xplore</span>
+            </div>
+        </div>
+
+        <section class="mb-32">
+            <div class="flex items-center gap-4 mb-12">
+                <div class="h-px bg-gray-800 flex-1"></div>
+                <h2 class="text-sm font-bold text-gray-500 uppercase tracking-widest">Core Contributions</h2>
+                <div class="h-px bg-gray-800 flex-1"></div>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                
+                <div class="bg-gradient-to-br from-orange-900 to-slate-900 p-8 rounded-3xl h-96 relative overflow-hidden group border border-white/10">
+                    <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between">
+                        <div>
+                            <i class="fas fa-plane-departure mb-4 text-2xl"></i>
+                            <h3 class="text-3xl font-bold mb-2">Aerospace Engineering</h3>
+                            <p class="text-gray-400 text-sm">Specialized knowledge in UAV systems, avionics, and control systems.</p>
+                        </div>
+                        <ul class="text-sm font-mono space-y-2 text-orange-200">
+                            <li class="flex justify-between border-b border-white/10 pb-1"><span>Autonomous Nav</span><span>•</span></li>
+                            <li class="flex justify-between border-b border-white/10 pb-1"><span>Control Systems</span><span>•</span></li>
+                            <li class="flex justify-between border-b border-white/10 pb-1"><span>Aerodynamics</span><span>•</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-gradient-to-br from-blue-900 to-slate-900 p-8 rounded-3xl h-96 relative overflow-hidden group border border-white/10">
+                    <div class="absolute inset-0 bg-[url('https://grainy-gradients.vercel.app/noise.svg')] opacity-20"></div>
+                    <div class="relative z-10 h-full flex flex-col justify-between">
+                        <div>
+                            <i class="fas fa-eye mb-4 text-2xl"></i>
+                            <h3 class="text-3xl font-bold mb-2">AI & Computer Vision</h3>
+                            <p class="text-gray-400 text-sm">Expertise in deploying AI models for real-time object tracking.</p>
+                        </div>
+                        <ul class="text-sm font-mono space-y-2 text-blue-200">
+                            <li class="flex justify-between border-b border-white/10 pb-1"><span>TensorFlow</span><span>•</span></li>
+                            <li class="flex justify-between border-b border-white/10 pb-1"><span>OpenCV</span><span>•</span></li>
+                            <li class="flex justify-between border-b border-white/10 pb-1"><span>YOLO / DeepSORT</span><span>•</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mb-32 max-w-4xl mx-auto">
+            <h2 class="text-3xl font-bold mb-12">Experience</h2>
+            
+            <div class="group border-l-2 border-gray-800 pl-8 pb-12 relative hover:border-white transition-colors">
+                <span class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-800 group-hover:bg-white transition-colors"></span>
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-xl font-bold">Research Trainee, Aerospace Dept</h3>
+                    <span class="text-gray-500 font-mono">2024 - Present</span>
+                </div>
+                <div class="text-purple-400 font-mono text-sm mb-4">IIT Madras</div>
+                <p class="text-gray-400 mb-4">Led the design of a real-time, vision-based autonomous control system for aerial vehicles. Deployed YOLOv8 on NVIDIA Jetson Orin Nano.</p>
+                <div class="flex gap-2 flex-wrap">
+                    <span class="px-2 py-1 bg-gray-900 rounded text-xs text-gray-300">Python</span>
+                    <span class="px-2 py-1 bg-gray-900 rounded text-xs text-gray-300">MATLAB</span>
+                    <span class="px-2 py-1 bg-gray-900 rounded text-xs text-gray-300">Jetson Nano</span>
+                </div>
+            </div>
+
+            <div class="group border-l-2 border-gray-800 pl-8 pb-12 relative hover:border-white transition-colors">
+                <span class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-gray-800 group-hover:bg-white transition-colors"></span>
+                <div class="flex justify-between items-start mb-2">
+                    <h3 class="text-xl font-bold">Operation Trainee</h3>
+                    <span class="text-gray-500 font-mono">2023</span>
+                </div>
+                <div class="text-blue-400 font-mono text-sm mb-4">Airport Authority of India (AAI)</div>
+                <p class="text-gray-400">Observed operations in Air Traffic Control (ATC), ground handling, and security. Logged fault propagation data.</p>
+            </div>
+        </section>
+
+        <section class="mb-32 border-t border-gray-900 pt-20">
+            <h2 class="text-4xl font-bold mb-12">Ask Me Anything.</h2>
+            <div class="space-y-4">
+                
+                <details class="group bg-card p-6 rounded-xl cursor-pointer">
+                    <summary class="flex justify-between items-center font-medium list-none">
+                        <span>What inspired you to combine AI with Aerospace?</span>
+                        <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="text-gray-400 mt-4 leading-relaxed text-sm">
+                        I realized that while aerodynamics provides the body, AI provides the brain. My goal is to create autonomous systems that can "see" and "think" like pilots.
+                    </div>
+                </details>
+
+                <details class="group bg-card p-6 rounded-xl cursor-pointer">
+                    <summary class="flex justify-between items-center font-medium list-none">
+                        <span>How do you optimize for Jetson Nano?</span>
+                        <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="text-gray-400 mt-4 leading-relaxed text-sm">
+                        I use TensorRT optimization and quantization to reduce model size without losing accuracy, allowing YOLOv8 to run in real-time on edge devices.
+                    </div>
+                </details>
+
+                <details class="group bg-card p-6 rounded-xl cursor-pointer">
+                    <summary class="flex justify-between items-center font-medium list-none">
+                        <span>What is your patent about?</span>
+                        <span class="transition group-open:rotate-180"><i class="fas fa-chevron-down"></i></span>
+                    </summary>
+                    <div class="text-gray-400 mt-4 leading-relaxed text-sm">
+                        "An Autonomous Guidance and Tracking System with a Distributed AI-Edge Computing Architecture." It moves the processing from the ground station to the missile itself.
+                    </div>
+                </details>
+
+            </div>
+        </section>
+
+        <footer class="pb-20 pt-32 text-center border-t border-gray-900">
+            <h1 class="text-[12vw] font-bold leading-none tracking-tighter text-gray-800 hover:text-white transition-colors duration-500 select-none">AMEER</h1>
+            <div class="flex justify-center gap-8 mt-8 text-sm font-mono text-gray-500">
+                <a href="#" class="hover:text-white">LINKEDIN</a>
+                <a href="#" class="hover:text-white">GITHUB</a>
+                <a href="#" class="hover:text-white">EMAIL</a>
+            </div>
+        </footer>
+
+    </main>
 </body>
 </html>
